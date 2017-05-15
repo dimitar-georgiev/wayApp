@@ -1,0 +1,48 @@
+<ion-view view-title="Current Position" cache-view="false">
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-loop" ng-click="refresh()"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list" style="margin-bottom: 0; padding-bottom: 0;" scroll="false">
+            <div class="item item-button-right item-avatar" style="background: linear-gradient(to right, red , yellow);">
+                <img src="./img/face.png" alt="avatar"/>
+                <h2>Dimitar Georgiev</h2>
+                <button class="button button-icon icon" ng-class="userListToggleButton" ng-click="toggleUserList()"></button>
+            </div>
+        </div>
+        <div class="list" style="margin-bottom: 0; padding-bottom: 0;" ng-if="userList">
+            <div class="item">
+                <label><input type="radio" name="test"/> Test 1</label>
+            </div>
+            <div class="item">
+                <label><input type="radio" name="test"/> Test 2</label>
+            </div>
+            <div class="item">
+                <input type="radio" name="test"/> Test 3
+            </div>
+            <div class="item">
+                <input type="radio" name="test"/> Test 4
+            </div>
+            <div class="item">
+                <input type="radio" name="test"/> Test 5
+            </div>
+            <div class="item">
+                <input type="radio" name="test"/> Test 6
+            </div>
+            <div class="item">
+                <input type="radio" name="test"/> Test 7
+            </div>
+            <div class="item">
+                <input type="radio" name="test"/> Test 8
+            </div>
+            <div class="item">
+                <input type="radio" name="test"/> Test 9
+            </div>
+            <div class="item">
+                <input type="radio" name="test"/> Test 10
+            </div>
+        </div>
+        <div id="map" style="margin-top: 0;" ng-show="showMap"></div>
+
+    </ion-content>
+</ion-view>

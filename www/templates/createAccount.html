@@ -1,0 +1,37 @@
+<ion-view>
+    <ion-content scroll="false">
+        <section class="create-account-container">
+            <div class="list col">
+                <label class="item item-input">
+                    <span class="input-label">First Name</span>
+                    <input type="text" ng-model="user.firstName" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Last Name</span>
+                    <input type="text" ng-model="user.lastName" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Username</span>
+                    <input type="text" ng-model="user.username" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" ng-model="user.password" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Retype Password</span>
+                    <input type="password" />
+                </label>
+            </div>
+            <div class="col text-center">
+                <button class="button button-outline button-dark button-block icon ion-camera text-left">&nbsp;Add Picture</button>
+            </div>
+            <div class="col text-center">
+                <button class="button button-positive button-block icon ion-person-add" ng-click="signUp()">&nbsp;&nbsp;<strong>Sign up</strong></button>
+            </div>
+            <div class="col text-center">
+                <strong><a href="#/login">Already have an account?</a></strong>
+            </div>
+        </section>
+    </ion-content>
+</ion-view>

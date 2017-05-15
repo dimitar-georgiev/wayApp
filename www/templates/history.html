@@ -1,0 +1,22 @@
+<ion-view view-title="History">
+    <ion-content>
+        <div class="list" style="margin-bottom: 0; padding-bottom: 0;" scroll="false">
+
+            <div class="item item-button-right item-avatar" style="background: linear-gradient(to right, red , yellow);">
+                <img src="./img/face.png" alt="avatar"/>
+                <h2>Dimitar Georgiev</h2>
+                <p>{{periodValue.time | uppercase | removeHyphens}}</p>
+                <button class="button button-icon icon" ng-class="historyListToggleButton" ng-click="toggleHistoryList()"></button>
+            </div>
+
+            <ion-list ng-if="historyList">
+                <ion-radio ng-repeat="period in periods" ng-model="periodValue.time" ng-value="period" ng-click="toggleHistoryList(); getMap(period)">{{period}}</ion-radio>
+            </ion-list>
+
+        </div>
+
+        <div id="log"></div>
+
+        <div id="historyMap" style="margin-top: 0;" ng-show="showMap"></div>
+    </ion-content>
+</ion-view>

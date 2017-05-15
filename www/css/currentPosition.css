@@ -1,0 +1,8 @@
+.scroll {
+    /*height: 100%;*/
+    bottom: 0;
+}
+#map {
+    height: 100%;
+    width: 100%;
+}

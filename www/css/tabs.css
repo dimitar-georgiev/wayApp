@@ -1,0 +1,23 @@
+.tabs {
+    height: 53px;
+    bottom: -1px;
+}
+
+.tabs-striped .tabs{
+    padding-top: 4px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/*active state of the tab*/
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.activated {
+    color: yellow;
+    /*color: #ffbb33;*/
+    border-color: yellow;
+    padding-top: 1px;
+}
+
+/*inactive state of the tab*/
+ion-tabs.tabs-color-active-positive .tab-item {
+    /*color: #387ef5;*/
+    padding-top: 1px;
+}

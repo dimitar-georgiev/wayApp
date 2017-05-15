@@ -1,0 +1,38 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content drag-content="false">
+        <ion-nav-bar class="bar-dark">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left">
+        <ion-content class="sidebar-container">
+            <div class="sidebar-logo text-center">
+                <img src="img/face.png" style="max-height: 140px; max-width: 140px; border-radius: 70px;"/>
+            </div>
+            <div class="text-center" style="font-size: 1.5em;padding-bottom: 2em;">
+                Dimitar Georgiev
+            </div>
+            <ion-list>
+                <ion-item menu-close class="sidebar-nav-list" ui-sref="app.tabs.current-position">
+                    <i class="icon ion-home"></i>&nbsp;<small>Home</small>
+                </ion-item>
+                <ion-item menu-close class="sidebar-nav-list" ui-sref="app.profile">
+                    <i class="icon ion-person"></i>&nbsp;<small>Profile</small>
+                </ion-item>
+                <ion-item menu-close class="sidebar-nav-list" ui-sref="app.network">
+                    <i class="icon ion-ios-people"></i>&nbsp;<small>Network</small>
+                </ion-item>
+                <ion-item menu-close class="sidebar-nav-list" ng-click="logout()">
+                    <i class="icon ion-log-out"></i>&nbsp;<small>Logout</small>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
